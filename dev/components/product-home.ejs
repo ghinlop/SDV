@@ -1,0 +1,20 @@
+<div class="border border-muted py-1 mb-3">
+    <h2 class="uk-h5 text-uppercase my-0 gh-header info">
+        sản phẩm mới
+    </h2>
+    <div class="gh-body d-md-block px-3">
+        <div class="row">
+            <% for(let i = 1; i < 4; i++) {%>
+                <a href="#" class="col-md-4 item-show">
+                    <div class="item-img d-block">
+                        <img src="" alt="" data-src="./dist/images/product/p-<%=i %>.jpg" uk-img="">
+                    </div>
+                    <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                        <%=i %>
+                    </h3>
+                    <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                </a>
+                <% } %>
+        </div>
+    </div>
+</div>

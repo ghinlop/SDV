@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#0088cc" />
+<meta name="msapplication-navbutton-color" content="#0088cc" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#0088cc" />
+<meta name="author" content="VUTADESIGN.VN" />
+<meta name="viewport" content="width=device-width" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<meta name="Classification" content="Personal" />
+<meta name="Rating" content="General" />
+<meta name="Revisit-After" content="7 Days" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/htmll; charset=UTF8" />
+<meta name="DC.Description" content="" />
+<meta property="og:site_name" content="Thiết kế website chuyên nghiệp" />
+<meta property="og:image" content="https://vutaweb.vn/uploads/images/banner/promotion-vutaweb.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vutaweb.vn/" />
+<meta property="og:title" content="Thiết kế website chuyên nghiệp" />
+<meta property="og:description" content="" />
+<meta name="geo.placename" content="Viet Nam" />
+<meta name="geo.region" content="vn" />
+<meta name="DC.Language" content="vn" />
+<meta name="robots" content="index,follow" />
+<meta property="fb:app_id" content="481922431975290" />
+<meta name="alexaVerifyID" content="" />    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <link rel="alternate" href="https://vutaweb.vn" hreflang="vn" />
+    <link rel="stylesheet" href="./dist/css/ghinlop.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <title>Document</title>
+</head>
+<body class="montserrat">
+    <div class="uk-offcanvas-content">
+    <header class="position-relative nodesk">
+    <section class="menu-top">
+        <div class="uk-container py-2">
+            <div class="row align-items-center">
+                <div class="col-2 d-md-none px-md-3 px-0 text-center">
+                    <a class="a-toggle" href="#aside" uk-toggle>
+                        <i class="fa fa-bars fa-2x"></i>
+                        <i class="fa fa-close fa-2x d-none"></i>
+                    </a>
+                    <!-- 
+                        - Chỉ hiện ở chế độ mobile
+                        - Gọi menu-bottom bằng id khi ở chế độ mobile
+                    -->
+                </div>
+                <div class="col-md-6 col-8 text-md-left text-center">
+                    Thứ 6, 6/7/2018 21:02 PM
+                </div>
+                <div class="col-md-6 col-2 text-md-right text-center px-md-3 px-0">
+                    <div class="d-md-inline-flex align-items-center">
+                        <a href="./login.html" class="d-inline-block px-3 user-login">
+                            <span class="d-md-inline d-none">Login</span>
+                            <i class="d-md-none fa fa-user fa-2x"></i>
+                        </a>
+                        <!-- Khung tìm kiếm và Cờ sẽ ẩn trên chế độ Mobile -->
+                        <div class="d-md-inline-block d-none px-3">
+                            <form action="">
+                                <div class="uk-inline">
+                                    <a class="uk-form-icon uk-form-icon-flip text-primary" href="#" uk-icon="icon: search"></a>
+                                    <input type="text" class="uk-input my-0 uk-form-small">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="d-md-inline-flex pl-md-3 icon-flag d-none">
+                            <a class="mr-md-1" href="#">
+                                <img src="" alt="" data-src="./dist/images/flag/uk.png" uk-img="">
+                            </a>
+                            <a class="mr-md-1" href="#">
+                                <img src="" alt="" data-src="./dist/images/flag/vn.png" uk-img="">
+                            </a>
+                            <a href="#">
+                                <img src="" alt="" data-src="./dist/images/flag/jp.png" uk-img="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cover-header uk-flex-middle uk-background-cover" uk-img data-src="./dist/images/banner-cover.jpg">
+        <!-- Có thể change background bằng cách thay đổi link trong data-src -->
+        <div class="uk-container">
+            <div class="row align-items-center text-md-left text-center py-md-3">
+                <div class="col-md-4 header-logo">
+                    <a href="/">
+                        <img alt="" uk-img="" data-src="./dist/images/logo.png">
+                    </a>
+                </div>
+                <div class="col-md-8 text-center py-md-5 py-3">
+                    <h1 class="text-uppercase uk-text-bold text-white">
+                        công ty trách nhiệm hữu hạn SD Việt Nam
+                    </h1>
+                    <i class="uk-h4 text-white">Cung cấp sản phẩm tốt nhất tới khách hàng</i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div id="aside" class="uk-container p-0" uk-offcanvas="mode: push; overlay: true;">
+            <!-- 
+                Gồm 4 chế độ hiển thị menu khi ở chế độ mobile:
+                - mode: push
+                - mode: slide
+                - mode: reveal
+                - mode: none
+             -->
+            <div class="uk-offcanvas-bar p-0">
+                <div class="d-md-none menu-top-mobile d-block p-3">
+                    <!-- Hiển thị phần tìm kiếm và cờ trên menu khi ở chế độ mobile -->
+                    <div class="d-block">
+                        <form action="">
+                            <div class="uk-inline">
+                                <a class="uk-form-icon uk-form-icon-flip text-primary" href="#" uk-icon="icon: search"></a>
+                                <input type="text" class="uk-input my-0 uk-form-width-large">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="d-block pl-md-3 icon-flag text-center">
+                        <div class="d-inline-flex">
+                            <a class="mr-md-1" href="#">
+                                <img src="" alt="" data-src="./dist/images/flag/uk.png" uk-img="">
+                            </a>
+                            <a class="mr-md-1" href="#">
+                                <img src="" alt="" data-src="./dist/images/flag/vn.png" uk-img="">
+                            </a>
+                            <a href="#">
+                                <img src="" alt="" data-src="./dist/images/flag/jp.png" uk-img="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="menu-bottom nolist d-md-inline-flex d-block">
+                    <li>
+                        <a href="#">Trang Chủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Giới Thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#">Sản Phẩm</a>
+                        <div class="gh-dropdown my-0" uk-dropdown="mode: click; pos: bottom-left">
+                            <!-- Có thể thay đổi từ click qua hover bằng cách thay "mode:click" -->
+                            <ul class="nolist">
+                                <li>
+                                    <a href="http://google.com">Sản phẩm dẫn điện cho ô Tô</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bộ dây dẫn cho tủ lạnh</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bộ dây dẫn điều hòa</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Đối Tác</a>
+                    </li>
+                    <li>
+                        <a href="#">Tuyển Dụng</a>
+                    </li>
+                    <li>
+                        <a href="#">Tin Tức</a>
+                    </li>
+                    <li>
+                        <a href="#">Bản Đồ</a>
+                    </li>
+                    <li>
+                        <a href="#">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+</header>
+        <main>
+            <div class="uk-container bg-white p-md-3 px-0">
+                <div class="row">
+                    <div class="col-md-9 order-md-2 order-1">
+                        <article class="d-block px-md-0 px-3">
+                            <div class="about-img float-md-right">
+                                <img src="" alt="" data-src="./dist/images/gd.jpg" uk-img="">
+                            </div>
+                            <p class="text-info mb-5">Thư ngỏ của Tổng giám đốc</p>
+                            <p> Xin chào!
+                                <br> Tôi là Mr. Shinichi Ozawa, Giám đốc Công ty TNHH SD Việt Nam.</p>
+                            <p> Công ty SD Việt Nam thuộc Tập đoàn Sumitomo Electric của Nhật Bản, có vai trò là trụ sở chính
+                                tại khu vực miền Bắc Việt Nam. Chúng tôi kinh doanh sản xuất bộ dây dẫn điện cho xe ô tô,
+                                điều hòa, ca mera, máy công nghiệp, máy nông nghiệp... Tập đoàn Sumitono Electric hoạt động
+                                kinh doan quy mô toàn cầu tại 100 lãnh thổ và quốc gia trên thế giới với 500 nhà máy và chi
+                                nhánh lớn nhỏ. Trong tất cả các cơ sở sản xuất kinh doanh của tập đoàn, Công ty SD Việt Nam
+                                là một trong những nhà máy đứng đầu về mặt chất lượng, giá cả sản phẩm và xuất hàng luôn
+                                đúng thời hạn với khách hàng.</p>
+                            <p>Vì vậy, Công ty chúng tôi chắc chắn sẽ phát triển mạnh hơn trong thời gian tới. Để Công ty có
+                                sự phát triển bền vững, Công ty cần tuyển dụng công nhân viên ưu tú và chúng tôi cũng đang
+                                cố gắng để nâng cao năng lực làm việc cho công nhân viên trong công ty. Chúng tôi cũng luôn
+                                nỗ lực để có phúc lợi tốt nhất, thường xuyên tổ chức các sự kiện giải trí để tạo môi trường
+                                làm việc thoải mái, vui vẻ cho tất cả công nhân viên.
+                            </p>
+                            <p>
+                                Hãy cùng làm việc với chúng tôi!
+                            </p>
+                        </article>
+
+
+                        <div class="border border-muted py-1 mb-3">
+                            <h2 class="uk-h5 text-uppercase my-0 gh-header info">
+                                sản phẩm mới
+                            </h2>
+                            <div class="gh-body d-md-block px-3">
+                                <div class="row">
+                                    
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                1
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                2
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                3
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                4
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                5
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                6
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                7
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                8
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                        <a href="#" class="col-md-4 item-show">
+                                            <div class="item-img d-block">
+                                                <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                                            </div>
+                                            <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                                                9
+                                            </h3>
+                                            <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                                        </a>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 order-md-1 order-2">
+                        <div class="widget border border-muted mb-3 ">
+    <div class="pt-2">
+        <!-- 
+                gh-header cho phép thay đổi 6 màu theo class:
+                - Mặc định màu xanh dương nhạt  (.gh-header)
+                - Màu xanh dương đậm            (.gh-header.info)
+                - Màu xanh lá                   (.gh-header.success)
+                - Màu đỏ                        (.gh-header.danger)
+                - Màu vàng                      (.gh-header.warning)
+                - Màu đen                       (.gh-header.dark)
+             -->
+        <h2 class="uk-h5 text-uppercase my-0 gh-header success">
+            sản phẩm mới
+            <img class="icon-header" src="./dist/images/icon/new.png" alt="">
+        </h2>
+        <div class="gh-body d-md-block">
+            
+                <a href="#" class="item-show">
+                    <div class="item-img d-block">
+                        <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                    </div>
+                    <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                        1
+                    </h3>
+                    <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                </a>
+                
+                <a href="#" class="item-show">
+                    <div class="item-img d-block">
+                        <img src="" alt="" data-src="./dist/images/product/p-2.jpg" uk-img="">
+                    </div>
+                    <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                        2
+                    </h3>
+                    <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                </a>
+                
+        </div>
+    </div>
+</div>
+<div class="widget border border-muted mb-3 ">
+    <div class="pt-2">
+        <!-- 
+                    gh-header cho phép thay đổi 6 màu theo class:
+                    - Mặc định màu xanh dương nhạt  (.gh-header)
+                    - Màu xanh dương đậm            (.gh-header.info)
+                    - Màu xanh lá                   (.gh-header.success)
+                    - Màu đỏ                        (.gh-header.danger)
+                    - Màu vàng                      (.gh-header.warning)
+                    - Màu đen                       (.gh-header.dark)
+                 -->
+        <h2 class="uk-h5 text-uppercase my-0 gh-header success">
+            video - hình ảnh sdv
+        </h2>
+        <div class="gh-body d-md-block">
+            
+                <a href="#" class="item-show">
+                    <div class="item-img d-block">
+                        <img src="" alt="" data-src="./dist/images/product/p-1.jpg" uk-img="">
+                    </div>
+                    <h3 class="uk-h5 my-0 item-title">Hình ảnh
+                        1
+                    </h3>
+                </a>
+                
+                <a href="#" class="item-show">
+                    <div class="item-img d-block">
+                        <img src="" alt="" data-src="./dist/images/product/p-2.jpg" uk-img="">
+                    </div>
+                    <h3 class="uk-h5 my-0 item-title">Hình ảnh
+                        2
+                    </h3>
+                </a>
+                
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="bg-info d-md-block d-none text-center">
+    <div class="uk-container">
+        <ul class="menu-bottom nolist d-md-inline-flex d-block">
+            <li>
+                <a href="#">Trang Chủ</a>
+            </li>
+            <li>
+                <a href="#">Giới Thiệu</a>
+            </li>
+            <li>
+                <a href="#">Sản Phẩm</a>
+            </li>
+            <li>
+                <a href="#">Đối Tác</a>
+            </li>
+            <li>
+                <a href="#">Tuyển Dụng</a>
+            </li>
+            <li>
+                <a href="#">Tin Tức</a>
+            </li>
+            <li>
+                <a href="#">Bản Đồ</a>
+            </li>
+            <li>
+                <a href="#">Liên Hệ</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="bg-primary text-center text-white pt-3 pb-5">
+    <div class="uk-container">
+        <p class="my-0 text-uppercase">công ty trách nhiệm hữu hạn SD</p>
+        <p class="my-0">Lô H2a khu công nghiệp Thăng Long, Đông Anh, Hà Nội</p>
+        <p class="my-0">Copyright 2018 - Bản quyền thuộc về GhinLop Designer</p>
+    </div>
+</footer>
+</div>
+
+<script src="./dist/js/jquery-3.3.1.min.js"></script>
+<script src="./dist/js/uikit.min.js"></script>
+<script src="./dist/js/uikit-icons.min.js"></script>
+<script src="./dist/js/main.js"></script>
+</body>
+
+</html>

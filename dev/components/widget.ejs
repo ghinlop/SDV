@@ -1,0 +1,58 @@
+<div class="widget border border-muted mb-3 ">
+    <div class="pt-2">
+        <!-- 
+                gh-header cho phép thay đổi 6 màu theo class:
+                - Mặc định màu xanh dương nhạt  (.gh-header)
+                - Màu xanh dương đậm            (.gh-header.info)
+                - Màu xanh lá                   (.gh-header.success)
+                - Màu đỏ                        (.gh-header.danger)
+                - Màu vàng                      (.gh-header.warning)
+                - Màu đen                       (.gh-header.dark)
+             -->
+        <h2 class="uk-h5 text-uppercase my-0 gh-header success">
+            sản phẩm mới
+            <img class="icon-header" src="./dist/images/icon/new.png" alt="">
+        </h2>
+        <div class="gh-body d-md-block">
+            <% for(let i = 1; i < 3; i++) {%>
+                <a href="#" class="item-show">
+                    <div class="item-img d-block">
+                        <img src="" alt="" data-src="./dist/images/product/p-<%=i %>.jpg" uk-img="">
+                    </div>
+                    <h3 class="uk-h5 my-0 item-title">Sản phẩm
+                        <%=i %>
+                    </h3>
+                    <h4 class="uk-h5 my-0 item-price">Giá: Liên hệ</h4>
+                </a>
+                <% } %>
+        </div>
+    </div>
+</div>
+<div class="widget border border-muted mb-3 ">
+    <div class="pt-2">
+        <!-- 
+                    gh-header cho phép thay đổi 6 màu theo class:
+                    - Mặc định màu xanh dương nhạt  (.gh-header)
+                    - Màu xanh dương đậm            (.gh-header.info)
+                    - Màu xanh lá                   (.gh-header.success)
+                    - Màu đỏ                        (.gh-header.danger)
+                    - Màu vàng                      (.gh-header.warning)
+                    - Màu đen                       (.gh-header.dark)
+                 -->
+        <h2 class="uk-h5 text-uppercase my-0 gh-header success">
+            video - hình ảnh sdv
+        </h2>
+        <div class="gh-body d-md-block">
+            <% for(let i = 1; i < 3; i++) {%>
+                <a href="#" class="item-show">
+                    <div class="item-img d-block">
+                        <img src="" alt="" data-src="./dist/images/product/p-<%=i %>.jpg" uk-img="">
+                    </div>
+                    <h3 class="uk-h5 my-0 item-title">Hình ảnh
+                        <%=i %>
+                    </h3>
+                </a>
+                <% } %>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "name": "sdv",
+  "version": "1.0.0",
+  "description": "SDV Shop Template",
+  "main": "index.js",
+  "eng": "ejs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghinlop/SDV.git"
+  },
+  "keywords": [
+    "GhinLop",
+    "template",
+    "Ghindesign",
+    "Shop",
+    "template"
+  ],
+  "author": "GhinLop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghinlop/SDV/issues"
+  },
+  "homepage": "https://github.com/ghinlop/SDV#readme"
+}

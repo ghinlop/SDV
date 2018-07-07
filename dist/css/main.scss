@@ -1,0 +1,260 @@
+@import './_resource/inc/_mixin.scss';
+@import './_resource/inc/_var.scss';
+@import './_resource/inc/_global.scss';
+
+/* Root Config */ 
+// #region Root
+/*
+    -   Đây là biến thiết lập toàn cục cho CSS
+    -   Nếu thay đổi giá trị các biến này sẽ tác dộng trực tiếp đến các thuộc tính sử dụng
+    var(<tên biến>)
+*/ 
+:root{
+    /* Font*/ 
+    --font-arial: 'Arial';
+    --font-montserrat: 'Montserrat';
+    --menu-top-bg: #0088dd;
+    --menu-top-color: #fff;
+
+    /* Flag */
+    --flag-width: 35px;
+
+    /* aside & menu-bottom*/
+    --aside-bg: #e74c3c;
+    --aside-color: #fff;
+    --aside-hover: #e74c3c;
+    --aside-item-bg-hover: #fff;
+
+    /* Widget */
+    --widget-bg: rgba(128, 238, 238, 0.3);
+}
+// #endregion Root
+
+body{
+    font-family: var(--font-montserrat);
+}
+
+
+/* Header */
+// #region menu-top
+.menu-top{
+    background-color: var(--menu-top-bg);
+    color: var(--menu-top-color);
+    a{
+        @include txt-color(#fff, #ddd);
+    }
+}
+.icon-flag{
+    img{
+        max-width: var(--flag-width);
+    }
+}
+@include md{
+    .user-login{
+        border-right: 1px solid white;
+    }
+}
+// #endregion menu-top
+
+// #region cover
+@include sm{
+    .header-logo{
+        background-color: rgba($color: #222, $alpha: .4);
+        padding: 15px;
+        img{
+            max-width: 50%;
+        }
+    }
+}
+// #endregion cover
+
+// #region menu-bottom
+aside{
+    background-color: var(--aside-bg);
+}
+.menu-bottom{
+    >li{
+        >a{
+            display: block;
+            padding: 8px 25px;
+            @include txt-color(var(--aside-color), var(--aside-hover));
+            @include bg-color($nocolor, var(--aside-item-bg-hover));
+            &.uk-open{
+                background-color: #fff;
+                color: var(--aside-hover);
+            }
+        }
+    }
+}
+
+// #endregion menu-bottom
+
+// #region dropdown
+.gh-dropdown{
+    padding: 0;
+    background-color: rgba($color: #fff, $alpha: .9);
+    ul{
+        border: 1px solid #ddd;
+    }
+    li{
+        &:not(:last-child){
+            border-bottom: 1px solid #ddd;
+        }
+        >a{
+            display: block;
+            padding: 8px 15px;
+            @include txt-color(var(--secondary), var(--aside-hover));
+        }
+    }
+}
+// #endregion dropdown
+
+// #region Menu Offcanvas
+@include sm{
+    .uk-offcanvas-bar{
+        .menu-top-mobile{
+            padding: 0 15px;
+            background-color: #1a1a1a;
+        }
+        .menu-bottom{
+            li{
+                >a{
+                    display: block;
+                    padding: 8px 15px;
+                    &:hover{
+                        background-color: #1a1a1a;
+                    }
+                }
+                &:not(:last-child) a{
+                    border-bottom: 1px solid #1a1a1a;
+                }
+                .gh-dropdown{
+                    &.uk-open{
+                        position: static;
+                    }
+                    ul{
+                        display: block;
+                        background-color: #1a1a1a;
+                        border: 0;
+                        li{
+                            border-bottom-color: #222;
+                            a:hover{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include sm{
+    .uk-offcanvas-container .a-toggle{
+        z-index: 10;
+        cursor: pointer;
+        position: relative;
+        i.fa-bars{
+            display: none!important;
+        }
+        i.fa-close{
+            display: block!important;
+        }
+    }
+}
+// #endregion Menu Offcanvas
+
+/* Main */
+main{
+    background-color: rgba(128, 238, 238, 0.3);
+}
+.gh-header{
+    background-color: #0088dd;
+    border: 1px dashed #fff;
+    outline: 2px solid #0088dd;
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+    position: relative;
+    &.success{
+        background-color: var(--success);
+        outline-color: var(--success);
+    }
+    &.danger{
+        background-color: var(--danger);
+        outline-color: var(--danger);
+    }
+    &.info{
+        background-color: var(--info);
+        outline-color: var(--info);
+    }
+    &.warning{
+        background-color: var(--warning);
+        outline-color: var(--warning);
+        color: #222;
+    }
+    &.dark{
+        background-color: var(--dark);
+        outline-color: var(--dark);
+    }
+    @include md{
+        @include transform(translateX(-5px));
+    }
+    .icon-header{
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        max-width: 40px;
+        @include transform(translateY(-50%));
+    }
+}
+
+/* Widget */
+.widget{
+    background-color: var(--widget-bg);
+} 
+
+/* Item-show*/ 
+.item-show{
+    padding: 15px;
+    display: block;
+    text-align: center;
+    &:not(:last-child){
+        border-bottom: 1px dashed #ddd;
+    }
+    .item-img{
+        border: 1px solid #ddd;
+        background: #fff;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        img{
+            width: auto;
+            height: 100%;
+        }
+    }
+    .item-title{
+        color: #222;
+    }
+    .item-price{
+        color: var(--danger);
+        font-weight: 600;
+    }
+}
+
+/* About page */
+.about-img{
+    max-width: 330px;
+    padding: 5px;
+    border: 1px solid #999;
+    margin: 0 0 5px 5px;
+} 
+
+@include sm{
+    .item-show{
+        .item-img{ 
+            width: auto;
+            height: unset;
+        }
+    }
+}
