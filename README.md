@@ -38,5 +38,6 @@ Company template basic. Building and Compile by Gulp & EJS Engine
 [![Vutaweb.Vn](https://thumb.ibb.co/bNVDSJ/demo_3.jpg)](http://festyy.com/wJPPDs)
 [![Vutaweb.Vn](https://thumb.ibb.co/kWBWEy/demo_4.png)](http://festyy.com/wJPPFA)
 [![Vutaweb.Vn](https://thumb.ibb.co/iO6L7J/demo_6.jpg)](http://festyy.com/wJPPGj)
+[![Vutaweb.Vn](https://thumb.ibb.co/cAMywo/Screenshot_2018_07_07_Thi_t_k_website_chuy_n_nghi_p.png)](http://festyy.com/wJPFHt)
 
 
