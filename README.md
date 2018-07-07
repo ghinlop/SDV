@@ -7,6 +7,10 @@
 # SDV Company Template
 Company template basic. Building and Compile by Gulp & EJS Engine
 
+## Version 1.0.1
+- Buid Product detail page
+- Fixed color Background, Text in Css
+
 ## Version 1.0.0
 ### Page Build
 - Index page

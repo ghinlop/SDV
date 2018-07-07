@@ -10,30 +10,38 @@
     var(<tên biến>)
 */ 
 :root{
+    --bg-main: #e6f4ff;
+    --bg-footer: #2779df;
     /* Font*/ 
     --font-arial: 'Arial';
     --font-montserrat: 'Montserrat';
-    --menu-top-bg: #0088dd;
+    --menu-top-bg: #00a8ff;
     --menu-top-color: #fff;
 
     /* Flag */
     --flag-width: 35px;
 
     /* aside & menu-bottom*/
-    --aside-bg: #e74c3c;
+    --aside-bg: #ce296e;
     --aside-color: #fff;
-    --aside-hover: #e74c3c;
+    --aside-hover: #ce296e;
     --aside-item-bg-hover: #fff;
 
     /* Widget */
-    --widget-bg: rgba(128, 238, 238, 0.3);
+    --widget-bg: #e6f4ff;
 }
 // #endregion Root
 
 body{
     font-family: var(--font-montserrat);
 }
-
+.btn-danger{
+    background-color: #ce296e;
+    color: #fff;
+    &:hover{
+        background-color: #831b46;
+    }
+}
 
 /* Header */
 // #region menu-top
@@ -166,23 +174,23 @@ aside{
 
 /* Main */
 main{
-    background-color: rgba(128, 238, 238, 0.3);
+    background-color: var(--bg-main);
 }
 .gh-header{
-    background-color: #0088dd;
+    background-color: var(--menu-top-bg);
     border: 1px dashed #fff;
-    outline: 2px solid #0088dd;
+    outline: 2px solid var(--menu-top-bg);
     display: block;
     padding: 8px 15px;
     color: #fff;
     position: relative;
     &.success{
-        background-color: var(--success);
-        outline-color: var(--success);
+        background-color: #3fc028;
+        outline-color: #3fc028;
     }
     &.danger{
-        background-color: var(--danger);
-        outline-color: var(--danger);
+        background-color: var(--aside-bg);
+        outline-color: var(--aside-bg);
     }
     &.info{
         background-color: var(--info);
@@ -249,7 +257,21 @@ main{
     border: 1px solid #999;
     margin: 0 0 5px 5px;
 } 
+.nav-footer{
+    background-color: var(--menu-top-bg);
+}
+footer{
+    background-color: var(--bg-footer);
+}
 
+/* detail */ 
+.img-detailt{
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+.product-title{
+    border-bottom: 1px dashed #555;
+}
 @include sm{
     .item-show{
         .item-img{ 
