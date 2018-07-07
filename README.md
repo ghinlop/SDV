@@ -28,6 +28,7 @@ Company template basic. Building and Compile by Gulp & EJS Engine
 - Montserrat (fonts google link in <head>)
 
 ### Thumbnail Demo
+
 [![Vutaweb.Vn](https://thumb.ibb.co/m897nJ/demo_1.png)](http://festyy.com/wJPPYz)
 [![Vutaweb.Vn](https://thumb.ibb.co/icVDSJ/demo_2.jpg)](http://festyy.com/wJPPSm)
 [![Vutaweb.Vn](https://thumb.ibb.co/bNVDSJ/demo_3.jpg)](http://festyy.com/wJPPDs)
