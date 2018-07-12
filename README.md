@@ -7,6 +7,30 @@
 # SDV Company Template
 Company template basic. Building and Compile by Gulp & EJS Engine
 
+## Version 1.0.2
+- Fixed Menu-bottom reponsive for Tablet
+- Add variable padding for item Menu-bottom
+
+```css
+    --aside-item-padding-desktop: 15px 25px;
+    --aside-item-padding-mobile: 10px;
+```
+
+- Add Affix Menu-bottom for desktop
+*Before Change*
+```html
+<aside>
+```
+
+*After Change*
+```html
+<aside 
+    uk-sticky="
+    top: 100;
+    animation: uk-animation-slide-top; 
+    media: 769">
+```
+
 ## Version 1.0.1
 - Buid Product detail page
 - Fixed color Background, Text in Css

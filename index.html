@@ -104,7 +104,11 @@
             </div>
         </div>
     </section>
-    <aside>
+    <aside 
+    uk-sticky="
+    top: 100; 
+    animation: uk-animation-slide-top; 
+    media: 769">
         <div id="aside" class="uk-container p-0" uk-offcanvas="mode: push; overlay: true;">
             <!-- 
                 Gồm 4 chế độ hiển thị menu khi ở chế độ mobile:
@@ -140,7 +144,7 @@
                 </div>
                 <ul class="menu-bottom nolist d-md-inline-flex d-block">
                     <li>
-                        <a href="#">Trang Chủ</a>
+                        <a class="active" href="#">Trang Chủ</a>
                     </li>
                     <li>
                         <a href="#">Giới Thiệu</a>

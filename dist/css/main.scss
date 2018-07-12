@@ -1,6 +1,6 @@
-@import './_resource/inc/_mixin.scss';
-@import './_resource/inc/_var.scss';
-@import './_resource/inc/_global.scss';
+@import './inc/_mixin.scss';
+@import './inc/_var.scss';
+@import './inc/_global.scss';
 
 /* Root Config */ 
 // #region Root
@@ -26,6 +26,8 @@
     --aside-color: #fff;
     --aside-hover: #ce296e;
     --aside-item-bg-hover: #fff;
+    --aside-item-padding-desktop: 15px 25px;
+    --aside-item-padding-mobile: 10px;
 
     /* Widget */
     --widget-bg: #e6f4ff;
@@ -81,13 +83,14 @@ aside{
     background-color: var(--aside-bg);
 }
 .menu-bottom{
+    margin-top: 0;
     >li{
         >a{
             display: block;
-            padding: 8px 25px;
+            padding: var(--aside-item-padding-desktop);
             @include txt-color(var(--aside-color), var(--aside-hover));
             @include bg-color($nocolor, var(--aside-item-bg-hover));
-            &.uk-open{
+            &.uk-open, &.active{
                 background-color: #fff;
                 color: var(--aside-hover);
             }
@@ -271,6 +274,11 @@ footer{
 }
 .product-title{
     border-bottom: 1px dashed #555;
+}
+@include table{
+    .menu-bottom > li > a{
+        padding: var(--aside-item-padding-mobile);
+    }
 }
 @include sm{
     .item-show{
